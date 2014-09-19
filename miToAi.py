@@ -108,7 +108,6 @@ class Window(Form, Base):
                     node.outNormal >> arnold.normalCamera
                 if type(node) == pc.nt.Mib_amb_occlusion:
                     arnold.color.set(node.bright.get())
-                    print 'hello'
                 if type(node) == pc.nt.GammaCorrect:
                     try:
                         if ignoreGamma:
